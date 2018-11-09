@@ -1,0 +1,16 @@
+{
+  "context": "client",
+  "identifier": "io.burnt.test-mod",
+  "display_name": "A Test Mod",
+  "description": "My first mod in forever",
+  "author": "burntcustard",
+  "version": "0.1.0",
+  "build": "112314",
+  "date": "2018-11-06",
+  "signature": " ",
+  "forum": "https://",
+  "category": [
+    "gameplay",
+    "titans"
+  ]
+}
