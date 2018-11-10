@@ -1,7 +1,7 @@
 // !LOCNS:galactic_war
 define(['shared/gw_common'], function (GW) {
     return {
-        type: function() { return 'units'; },
+        type: function() { return 'tech'; },
         visible: function(params) { return true; },
         describe: function(params) {
             return "!LOC:Improved Fabricator Build Arms increase the build speed of all fabricator and factory build arms by 50% and reduces energy usage by 50%.";

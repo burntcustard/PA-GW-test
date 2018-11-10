@@ -431,10 +431,13 @@ define([
 
                         var result = card.deal && card.deal(star, context, inventory);
 
-                        //console.log("card in 'fullHand':");
-                        //console.log(card);
                         var tempType = (card.type && card.type()) || 'noTypeSad';
                         _.extend(result, { type: tempType });
+
+                        //inventory.currentCardsOfType()[tempType]++;
+
+                        //console.log("Current numbers of card types: ");
+                        //console.log(inventory.currentCardsOfType());
 
                         if (match)
                             result.chance = 0;
@@ -444,8 +447,6 @@ define([
 
                     fullHand = _.map(fullHand, function (deal, index) {
                         deal.index = index;
-                        // console.log("card in fullHand map:");
-                        // console.log(deal);
                         return deal;
                     });
 

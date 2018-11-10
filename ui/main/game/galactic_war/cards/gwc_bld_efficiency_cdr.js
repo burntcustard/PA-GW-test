@@ -1,7 +1,7 @@
 // !LOCNS:galactic_war
 define(['shared/gw_common'], function (GW) {
     return {
-        type: function() { return 'commanderSecondary'; },
+        type: function() { return 'tech'; },
         visible: function(params) { return true; },
         describe: function(params) {
             return "!LOC:Improved Commander Build Arms increase build speed of all Commanders' build arms by 50% and reduces energy usage by 50%.";

@@ -150,7 +150,7 @@ requireGW([
                                 }
                                 else {
                                     api.debug.log(' ', product.id, '%', deal && deal.chance, product);
-                                    console.log("Adding this card to the inventory: ");
+                                    console.log("Adding this card to the inventory(?): ");
                                     console.log(product);
                                     game.inventory().cards.push(product)
                                     game.inventory().cards.pop();

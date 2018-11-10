@@ -228,6 +228,14 @@ define(['require'], function(require) {
             return current >= max;
         },
 
+        handIsFullOfAnyType: function() {
+            var self = this;
+            var fullOf = _.find(self.currentCardsOfType(), function(currNumOfType, index) {
+                return carrNumOfType >= self.maxCardsOfType()[index];
+            });
+            return fullOf;
+        },
+
         // Get a tag value.  When called during card processing, an empty
         // context will be replaced with the current card.
         getTag: function(context, name, def) {
